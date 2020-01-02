@@ -7,15 +7,15 @@ import { from } from 'rxjs';
   styleUrls: ['./pricing.component.css']
 })
 export class PricingComponent implements OnInit {
-  users={};
+  users:any={};
   count=0;
   constructor(private data:DataService) { }
 
   ngOnInit() {
     this.data.getData().subscribe(names=>{
-         this.users['arr']=names;
-         alert(this.users.arr.length);
-         this.count=this.users.arr.length;
+         this.users=names;
+         //alert(this.users.arr.length);
+         this.count=this.users.length;
     })
   }
 

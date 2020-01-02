@@ -1,7 +1,7 @@
 <h1>count:{{count}}</h1>
 <div class="container">
-    <div *ngFor="let usr of users.arr" class="card" style="width:40%">
-        <div>{{usr.login}}</div>
-   <img src="{{usr.avatar_url}}" height=100px width=100px class="img thumbnail">
+    <div *ngFor="let usr of users" class="card" style="width:40%">
+        <div>{{usr.title}}</div>
+   <img src="{{usr.url}}" height=100px width=100px class="img thumbnail">
     </div>
 </div>

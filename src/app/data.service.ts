@@ -7,6 +7,6 @@ export class DataService {
 
   constructor(private http:HttpClient) { }
   getData(){
-    return this.http.get('https://api.github.com/users?since=2004');
+    return this.http.get('https://jsonplaceholder.typicode.com/photos');
   }
 }
