@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  x="Akshita";
   constructor() { }
 
   ngOnInit() {
+    this.x=this.x+" W";
+  }
+  fmclick(){
+    this.x=this.x+" W";
   }
 
 }
